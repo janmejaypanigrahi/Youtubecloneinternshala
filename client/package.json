@@ -18,7 +18,9 @@
         "redux-persist": "^6.0.0",
         "styled-components": "^5.3.5",
         "timeago.js": "^3.0.2",
-        "web-vitals": "^2.1.4"
+        "web-vitals": "^2.1.4",
+        "babel-preset-react-app": "^10.0.0",
+        "@babel/plugin-proposal-private-property-in-object": "^7.16.0"
     },
     "scripts": {
         "start": "react-scripts start",
@@ -44,5 +46,15 @@
             "last 1 safari version"
         ]
     },
-    "proxy": "http://localhost:8800/api/"
+    "proxy": "https://youtubecloneinternshala.onrender.com/api",
+
+    "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-private-property-in-object"
+    ]
+  }
 }
